@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2590,12 +2590,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwButton: {fileID: 279082469}
   throwCountTxt: {fileID: 1529850092}
-  diceTexts:
-  - {fileID: 1025152132}
-  - {fileID: 1525389644}
-  - {fileID: 756698711}
   diceTotalTxt: {fileID: 298257210}
-  assignedNumbers: 
+  totalTxt: {fileID: 1467455944}
+  diceData:
+  - diceText: {fileID: 1025152132}
+    diceResult: 0
+  - diceText: {fileID: 1525389644}
+    diceResult: 0
+  - diceText: {fileID: 756698711}
+    diceResult: 0
+  selectedNumbersData: []
 --- !u!1 &875222205
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,7 +4307,7 @@ GameObject:
   - component: {fileID: 1467455945}
   - component: {fileID: 1467455944}
   m_Layer: 5
-  m_Name: ThrowCount.txt
+  m_Name: Total.txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5162,7 +5166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5091711413548074495, guid: 6da672f140a36c042be0270256b5b537, type: 3}
       propertyPath: numberValue
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6046983417032405125, guid: 6da672f140a36c042be0270256b5b537, type: 3}
       propertyPath: m_Pivot.x
@@ -5378,6 +5382,16 @@ MonoBehaviour:
   - {fileID: 1443158321}
   - {fileID: 1221637712}
   - {fileID: 1549885558}
+  selectedNumbersData:
+  - selectedNumber: 0
+    targetRound: 0
+    targetRoundRange: {x: 1, y: 10}
+  - selectedNumber: 0
+    targetRound: 0
+    targetRoundRange: {x: 5, y: 15}
+  - selectedNumber: 0
+    targetRound: 0
+    targetRoundRange: {x: 10, y: 20}
 --- !u!1 &1952736508
 GameObject:
   m_ObjectHideFlags: 0
